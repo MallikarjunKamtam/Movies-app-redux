@@ -1,0 +1,42 @@
+.movie-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 20px;
+  margin-top: 60px;
+  justify-content: center;
+}
+
+@keyframes card {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.2);
+  }
+}
+
+.poster-img {
+  justify-self: center;
+  width: 280px;
+  height: 400px;
+  padding: 0 20px;
+
+  transition: all 0.5;
+
+  &:hover {
+    transition: all 0.5;
+    transform: scale(1.1);
+  }
+}
+.year {
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+}
+
+.title {
+  width: 250px;
+  margin-bottom: 30px;
+  text-align: center;
+}
